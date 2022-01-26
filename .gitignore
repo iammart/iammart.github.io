@@ -1,5 +1,5 @@
 # Jekyll
-_site/
+# _site/
 *-cache/
 .jekyll-metadata
 
@@ -11,3 +11,5 @@ Gemfile.lock
 
 # JavaScript
 node_modules
+
+public
