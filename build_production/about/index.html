@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/about">
+    <meta name="description" content="A little bit about the site">
+    <title>About</title>
+
+    <meta property="og:title" content="About | "/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/about"/>
+    <meta property="og:image " content="/assets/img/og-image.jpg"/>
+    <meta property="og:description" content="A little bit about the site" />
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=8dd7865f72485351e1d6">
+
+    <script defer src="/assets/build/js/main.js?id=762f5dde6e0512376908"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    
+</head>
+
+<body class="text-[#38332d] font-sans antialiased bg-white">
+
+    <div class="flex flex-col min-h-screen">
+
+        <nav
+            class="lg:flex items-center border-b border-swiss-coffee-600 justify-between bg-[#4db692] md:bg-swiss-coffee-500 ">
+
+            <script>
+                const navMenu = {
+                    toggle() {
+                        const menu = document.getElementById('mobile-menu');
+                        menu.classList.toggle('hidden');
+                        menu.classList.toggle('lg:block');
+                    },
+                }
+            </script>
+
+            <ul
+                class="flex container gap-1 mx-auto items-center justify-between md:justify-start text-sm tracking-widest font-railway font-bold uppercase relative">
+
+                <li class="mr-8 ml-4">
+                    <a href="/"
+                        class=" text-white rounded-md relative block z-10
+                        md:before:absolute md:before:-inset-x-4 md:before:-inset-y-4
+                        md:before:z-[-10] md:before:block
+                        md:before:w-30 md:before:h-28
+                        md:before:rounded-b
+                        md:before:bg-[#4db692]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 md:w-24 my-4" viewBox="0 0 442.9 207.9"
+                            fill="currentColor">
+                            <circle class="cls-1" cx="25.99" cy="129.94" r="25.99" />
+                            <path class="cls-1"
+                                d="M290.76 285.42A26 26 0 0 1 241.52 297l-.16-.35-23.75-47.47-32 95.9-.17.5a26 26 0 0 1-49.31 0l-.17-.5L84.2 189.69a25.7 25.7 0 0 1-1.34-8.22 26 26 0 0 1 50.65-8.22l.16.49 27.16 81.46L188 173.74l.16-.49a26 26 0 0 1 47.91-3.39l.17.34 51.7 103.4.11.21a25.81 25.81 0 0 1 2.71 11.61ZM268.73 193.29c0-.08-.07-.14-.1-.21a25.69 25.69 0 0 1-2.74-11.61 26 26 0 0 1 49.24-11.61l.17.34 40.18 80.34 24.58-12.29 30.4-15.2L436 210.29l.21-.1a22 22 0 0 1 2.38-1.05 26.08 26.08 0 0 1 17-.52l.5.17a26 26 0 0 1 3.38 47.91l-.34.16-103.4 51.71-.2.1A26 26 0 0 1 320.6 297c-.05-.12-.11-.23-.17-.35"
+                                transform="translate(-30.89 -155.48)" />
+                        </svg>
+                    </a>
+                </li>
+
+
+                <li class="hidden md:block" id="js-nav-menu">
+                    <ul
+                        class="container flex gap-1 mx-auto items-center text-sm tracking-widest font-railway font-bold uppercase ">
+                        <li>
+                            <a title=" About" href="/about"
+                                class="block rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 active text-white bg-[#4db692]">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a title=" Playground" href="/playground"
+                                class="block rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 text-gray-700">
+                                Playground
+                            </a>
+                        </li>
+                        <li>
+                            <a title=" Bakery" href="/bakery"
+                                class="block rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 text-gray-700">
+                                Bakery
+                            </a>
+                        </li>
+                        <li>
+                            <a title=" Curriculum Vitae" href="/assets/pdf/martdingley.cv[2022].pdf" target="_blank"
+                                class="block text-gray-700 rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 relative">
+                                Curriculum Vitae
+                            </a>
+                        </li>
+                        <li>
+                            <a title=" Contact" href="mailto:dingley@gmail.com"
+                                class="block text-gray-700 rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="md:hidden px-4">
+
+                    <button type="button" onclick="navMenu.toggle()"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+
+                        <span class="sr-only">Open main menu</span>
+
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+
+                    </button>
+                </li>
+
+
+            </ul>
+
+            <div class="hidden" id="mobile-menu">
+                <div class="px-4 pt-2 pb-3 space-y-1">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+                </div>
+            </div>
+
+
+        </nav>
+
+            <div class="bg-swiss-coffee overflow-hidden pb-16">
+
+        <div class="container mx-auto">
+
+            <div class="max-w-screen-lg">
+
+                <h1 class="my-8 mx-6 md:mx-0 md:my-16 text-4xl font-extrabold uppercase">About Me</h1>
+
+                <div class="gap-6 md:flex">
+
+                    <div class="w-full md:w-1/2">
+
+                        <img src="/assets/img/IMG_5425.jpg" alt="Mart Dingley" class="md:border-r-1 md:border-l-1 mb-6 w-full lg:rounded ">
+
+                    </div>
+
+                    <div class="mx-6 md:mx-0 md:w-1/2">
+
+                        <p class="font-bold text-lg">I worked for almost 17 years for a web marketing company which involved me wearing many boots. I started off in design, then leading the design and finally into a shoe that fit which for me was development.</p>
+
+                        <p>Most of my time was spent creating behind the scene systems to support customers iOS/Android applications. This generally involved the development of both private and public APIs, along with a bespoke content managed systems.</p>
+
+                        <p>Ive been an adopter of Laravel since 5.0 having migrated across from Slim PHP 2.* which we used primarily for lightweight APIs.</p>
+
+                        <p>Its also been fortunate for me to have had experience directly in control of designing for retail shop windows, retail photography, stationary, branding, logos, brochures, websites, games -  My experiences haven't just been limited to just digital.</p>
+
+                        <p>Prior to this I got my foot through the door working a few years for a digital agency in London, partners to the best restaurants in the UK, international hotels &amp; prestigious members clubs, creating online presense.</p>
+
+                        <hr class="full-width border-mojo my-6">
+
+                    </div>
+
+                </div>
+
+                <div class="mt-16 gap-6 md:flex">
+                    <div class="mx-6 md:mx-0 md:w-1/2">
+                        <h3 class="mb-6 font-sans font-bold uppercase tracking-widest">The Website</h3>
+                        <p class="mb-6">This website built primarily in HTML and Markdown. Preprocessed by <a href="https://jigsaw.tighten.com" class="underline">Jigsaw</a> and hosted by <a href="https://github.com" class="underline">Github</a>.</p>
+                        <p class="mb-6"><a href="https://jekyllrb.com" class="underline">Jekyll</a> was first choice, but I found often I was having to reach for plugins to fill the gaps that the framework or liquid did not support, im a total noob to Ruby, so it made sense to switch to something im more famililar with that can build static files.</p>
+                    </div>
+
+                    <div class="mx-6 md:mx-0 md:w-1/2">
+
+                        
+
+                        <div class="flex gap-2 mt-8">
+
+    <a href="https://github.com/iammart"
+        class="inline-block text-gray-800 hover:text-[#181717] transition-colors border p-2 border-transparent hover:border-gray-800 rounded" target="_blank"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+        </svg>
+    </a>
+
+    <a href="https://www.linkedin.com/in/mart-dingley-68b5831/"
+        class="inline-block text-gray-800 hover:text-[#0A66C2] transition-colors border p-2 border-transparent hover:border-gray-800 rounded" target="_blank"
+        title="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+    </a>
+
+    <a href="https://www.instagram.com/iammart/"
+        class="inline-block text-gray-800 hover:text-[#E4405F] transition-colors border p-2 border-transparent hover:border-gray-800 rounded" target="_blank"
+        title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+        </svg>
+    </a>
+
+    <a href="https://twitter.com/martdingley"
+        class="inline-block text-gray-800 hover:text-[#1DA1F2] transition-colors border p-2 border-transparent hover:border-gray-800 rounded" target="_blank"
+        title="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+        </svg>
+    </a>
+
+    <a href="https://twitter.com/martdingley"
+        class="inline-block text-gray-800 hover:text-[#1DB954] transition-colors border p-2 border-transparent hover:border-gray-800 rounded" target="_blank"
+        title="Spotify">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+        </svg>
+    </a>
+
+    <a href="https://www.last.fm/user/martdingley"
+        class="inline-block text-gray-800 hover:text-[#D51007] transition-colors border p-2 border-transparent hover:border-gray-800 rounded" target="_blank"
+        title="Last.fm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path
+                d="M10.584 17.21l-.88-2.392s-1.43 1.594-3.573 1.594c-1.897 0-3.244-1.649-3.244-4.288 0-3.382 1.704-4.591 3.381-4.591 2.42 0 3.189 1.567 3.849 3.574l.88 2.749c.88 2.666 2.529 4.81 7.285 4.81 3.409 0 5.718-1.044 5.718-3.793 0-2.227-1.265-3.381-3.63-3.931l-1.758-.385c-1.21-.275-1.567-.77-1.567-1.595 0-.934.742-1.484 1.952-1.484 1.32 0 2.034.495 2.144 1.677l2.749-.33c-.22-2.474-1.924-3.492-4.729-3.492-2.474 0-4.893.935-4.893 3.932 0 1.87.907 3.051 3.189 3.601l1.87.44c1.402.33 1.869.907 1.869 1.704 0 1.017-.99 1.43-2.86 1.43-2.776 0-3.93-1.457-4.59-3.464l-.907-2.75c-1.155-3.573-2.997-4.893-6.653-4.893C2.144 5.333 0 7.89 0 12.233c0 4.18 2.144 6.434 5.993 6.434 3.106 0 4.591-1.457 4.591-1.457z" />
+        </svg>
+    </a>
+
+    <a href="https://www.strava.com/athletes/martdingley"
+        class="inline-block text-gray-800 hover:text-[#f44a03] transition-colors border p-2 border-transparent hover:border-gray-800 rounded" target="_blank"
+        title="Strava">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="m15.387 17.944-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599 2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/>
+        </svg>
+
+    </a>
+
+</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+        <footer class="border-t ">
+
+            
+
+            <ul class="container mx-auto py-8 px-4 md:px-0 items-center gap-2 text-gray-400 text-sm flex relative">
+
+                <li>
+                    <a href="/" class="text-gray-200 hover:text-[#4db692]">
+
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class="w-6 inline"
+                            viewBox="0 0 401 401" fill="currentColor">
+                            <path
+                                d="m450 250.8-96.67 48.34-.2.1a26 26 0 0 1-34.87-11.64 3.59 3.59 0 0 0-.17-.34l-51.7-103.4c0-.08-.07-.14-.1-.21a25.69 25.69 0 0 1-2.74-11.65 26 26 0 0 1 49.24-11.61c.06.11.12.23.17.34l40.18 80.34 24.58-12.28 30.4-15.21 25.52-12.76.21-.1a22 22 0 0 1 2.38-1 25.89 25.89 0 0 1 9.23-1.68 27.09 27.09 0 0 1 4.54.4V75a25 25 0 0 0-20-24.5V50H75a25 25 0 0 0-25 25v175.4a26 26 0 1 1 0 51.17V420h.5A25 25 0 0 0 75 450h345v-.5a25 25 0 0 0 29.5-29.5h.5ZM262.43 302a26 26 0 0 1-23.25-14.37l-.17-.34-23.74-47.48-32 95.9-.17.5a26 26 0 0 1-49.31 0l-.17-.5-51.77-155.45a26 26 0 0 1 49.32-16.44l.16.5 27.16 81.45 27.15-81.45.16-.5a26 26 0 0 1 47.91-3.39l.17.34 51.7 103.4.11.21A26 26 0 0 1 262.43 302Z"
+                                transform="translate(-49.5 -49.5)" />
+                        </svg>
+
+                    </a>
+                </li>
+
+                <li>
+
+                        &copy; Mart Dingley 2022 &bull; Published using
+                        <a href="https://jigsaw.tighten.com/" class="underline hover:no-underline">Jigsaw</a> &amp;
+                        <a href="https://tailwindcss.com/" class="underline hover:no-underline">Tailwind CSS</a>
+
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+
+    
+</body>
+
+</html>

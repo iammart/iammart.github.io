@@ -1,13 +1,88 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./source/_assets/js/homepage.anim.js":
+/*!********************************************!*\
+  !*** ./source/_assets/js/homepage.anim.js ***!
+  \********************************************/
+/***/ (() => {
+
+;
+
+(function () {
+  var Tile = function Tile(x, y) {
+    this.x = x;
+    this.y = y;
+    this.size = 50;
+  };
+
+  var tiles = [];
+  var NUM_COLS = 5;
+  var NUM_ROWS = 4;
+
+  for (var i = 0; i < NUM_COLS; i++) {
+    for (var j = 0; j < NUM_ROWS; j++) {
+      var tileX = i * 54 + 5;
+      var tileY = j * 54 + 40;
+      tiles.push(new Tile(tileX, tileY));
+    }
+  }
+
+  console.log(tiles);
+})();
+
+/***/ }),
+
 /***/ "./source/_assets/js/main.js":
 /*!***********************************!*\
   !*** ./source/_assets/js/main.js ***!
   \***********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _homepage_anim__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage.anim */ "./source/_assets/js/homepage.anim.js");
+/* harmony import */ var _homepage_anim__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_homepage_anim__WEBPACK_IMPORTED_MODULE_0__);
 
 
+(function () {
+  return;
+  var elements = document.querySelectorAll('.playground-list img');
+
+  if (elements) {
+    var items = [];
+    elements.forEach(function (element, idx) {
+      items.push({
+        src: element.src,
+        href: element.parentNode.href
+      });
+    });
+    items = items.sort(function () {
+      return Math.random() - 0.5;
+    });
+    elements.forEach(function (element, idx) {
+      element.src = items[idx].src;
+      element.parentNode.href = items[idx].href;
+    });
+  } // const columnWidths = [
+  //   'w-1/3 md:w-3/8 xl:w-2/12',
+  //   'w-1/3 md:w-2/8 xl:w-3/12',
+  //   'w-1/3 md:w-1/8 xl:w-2/12',
+  //   'w-1/3 md:w-2/8 xl:w-2/12',
+  //   'w-1/3 md:w-4/8 xl:w-3/12',
+  //   'w-1/3 md:w-4/8 xl:w-3/12',
+  // ].sort(() => Math.random() - 0.5)
+  // let elements = document.querySelector('.playground-list')
+  // if (elements) {
+  //   ;[].forEach.call(elements.children, (element, idx) => {
+  //     const items = columnWidths[idx].split(' ')
+  //     items.forEach(size => {
+  //       element.classList.add(size)
+  //     })
+  //   })
+  // }
+
+})();
 
 /***/ }),
 
@@ -83,6 +158,30 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	

@@ -1,9 +1,17 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
+
 module.exports = {
   content: require('fast-glob').sync([
-    './**/*.php'
+    './source/**/*.php',
+    './source/**/*.js',
   ]),
   theme: {
     extend: {
+      'minHeight': (theme) => ({
+        'screen/1': '75vh',
+        'screen/2': '50vh',
+      }),
       height: (theme) => ({
         'screen/1': '75vh',
         'screen/2': '50vh',
@@ -13,8 +21,13 @@ module.exports = {
       }),
       fontFamily: {
         railway: ['"Raleway"'],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        serif: ['Source Serif Pro', ...defaultTheme.fontFamily.serif],
       },
       colors: {
+        'downy': {
+          DEFAULT: '#5CCDCF',
+        },
         'swiss-coffee': {
           DEFAULT: '#E1D7D5',
           50: '#FFFFFF',

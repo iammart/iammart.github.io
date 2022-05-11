@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="/playground/net-magazine">
+    <meta name="description" content="Four page tutorial for .netmag (Issue 185) giving details to developers on how they may design and build an interactive map programmed with ActionScript">
+    <title>Future Publishing</title>
+
+    <meta property="og:title" content="Future Publishing | "/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/playground/net-magazine"/>
+    <meta property="og:image " content="/assets/img/og-image.jpg"/>
+    <meta property="og:description" content="Four page tutorial for .netmag (Issue 185) giving details to developers on how they may design and build an interactive map programmed with ActionScript" />
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=8dd7865f72485351e1d6">
+
+    <script defer src="/assets/build/js/main.js?id=762f5dde6e0512376908"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+        <style>
+        .group:before {
+            content: '';
+            background: #007E90;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 50vw;
+            z-index: -1;
+        }
+
+
+        img {
+            height: inherit;
+            width: auto;
+        }
+
+    </style>
+
+</head>
+
+<body class="text-[#38332d] font-sans antialiased bg-white">
+
+    <div class="flex flex-col min-h-screen">
+
+        <nav
+            class="lg:flex items-center border-b border-swiss-coffee-600 justify-between bg-[#4db692] md:bg-swiss-coffee-500 ">
+
+            <script>
+                const navMenu = {
+                    toggle() {
+                        const menu = document.getElementById('mobile-menu');
+                        menu.classList.toggle('hidden');
+                        menu.classList.toggle('lg:block');
+                    },
+                }
+            </script>
+
+            <ul
+                class="flex container gap-1 mx-auto items-center justify-between md:justify-start text-sm tracking-widest font-railway font-bold uppercase relative">
+
+                <li class="mr-8 ml-4">
+                    <a href="/"
+                        class=" text-white rounded-md relative block z-10
+                        md:before:absolute md:before:-inset-x-4 md:before:-inset-y-4
+                        md:before:z-[-10] md:before:block
+                        md:before:w-30 md:before:h-28
+                        md:before:rounded-b
+                        md:before:bg-[#4db692]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 md:w-24 my-4" viewBox="0 0 442.9 207.9"
+                            fill="currentColor">
+                            <circle class="cls-1" cx="25.99" cy="129.94" r="25.99" />
+                            <path class="cls-1"
+                                d="M290.76 285.42A26 26 0 0 1 241.52 297l-.16-.35-23.75-47.47-32 95.9-.17.5a26 26 0 0 1-49.31 0l-.17-.5L84.2 189.69a25.7 25.7 0 0 1-1.34-8.22 26 26 0 0 1 50.65-8.22l.16.49 27.16 81.46L188 173.74l.16-.49a26 26 0 0 1 47.91-3.39l.17.34 51.7 103.4.11.21a25.81 25.81 0 0 1 2.71 11.61ZM268.73 193.29c0-.08-.07-.14-.1-.21a25.69 25.69 0 0 1-2.74-11.61 26 26 0 0 1 49.24-11.61l.17.34 40.18 80.34 24.58-12.29 30.4-15.2L436 210.29l.21-.1a22 22 0 0 1 2.38-1.05 26.08 26.08 0 0 1 17-.52l.5.17a26 26 0 0 1 3.38 47.91l-.34.16-103.4 51.71-.2.1A26 26 0 0 1 320.6 297c-.05-.12-.11-.23-.17-.35"
+                                transform="translate(-30.89 -155.48)" />
+                        </svg>
+                    </a>
+                </li>
+
+
+                <li class="hidden md:block" id="js-nav-menu">
+                    <ul
+                        class="container flex gap-1 mx-auto items-center text-sm tracking-widest font-railway font-bold uppercase ">
+                        <li>
+                            <a title=" About" href="/about"
+                                class="block rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 text-gray-700">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a title=" Playground" href="/playground"
+                                class="block rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 active text-white bg-[#4db692]">
+                                Playground
+                            </a>
+                        </li>
+                        <li>
+                            <a title=" Bakery" href="/bakery"
+                                class="block rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 text-gray-700">
+                                Bakery
+                            </a>
+                        </li>
+                        <li>
+                            <a title=" Curriculum Vitae" href="/assets/pdf/martdingley.cv[2022].pdf" target="_blank"
+                                class="block text-gray-700 rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 relative">
+                                Curriculum Vitae
+                            </a>
+                        </li>
+                        <li>
+                            <a title=" Contact" href="mailto:dingley@gmail.com"
+                                class="block text-gray-700 rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="md:hidden px-4">
+
+                    <button type="button" onclick="navMenu.toggle()"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+
+                        <span class="sr-only">Open main menu</span>
+
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+
+                    </button>
+                </li>
+
+
+            </ul>
+
+            <div class="hidden" id="mobile-menu">
+                <div class="px-4 pt-2 pb-3 space-y-1">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+                </div>
+            </div>
+
+
+        </nav>
+
+            <main class="w-full project bg-swiss-coffee relative">
+
+        <h1 class="hidden">Future Publishing</h1>
+
+        <nav class=" inline-flex justify-between gap-1 text-sm md:text-base absolute right-4 top-4">
+            <div>
+                                    <a href="/playground/badger-lovers" title="Badger Lovers"
+                        class=" inline-flex items-center justify-center w-8 h-8 border border-gray-100 rounded text-white">
+                        &leftarrow;
+                    </a>
+                                </div>
+
+            <div>
+                                    <a href="/playground/bumble" title="Bumble Bee"
+                        class="inline-flex items-center justify-center  w-8 h-8 border border-gray-100 rounded text-white ">
+                        &rightarrow;
+                    </a>
+                            </div>
+        </nav>
+
+
+            <div class="bg-white">
+        <div class="min-h-screen/2 container container mx-auto lg:flex justify-center">
+            <div class="group z-0 lg:w-1/2 xl:w-35 bg-[#007E90]">
+                <img src="/assets/img/playground/netmag/magazine-fold.jpg" alt="Netmag" class="mx-auto h-full object-contain">
+            </div>
+            <div class="lg:w-1/2 xl:w-2/5 p-8 lg:p-16">
+                <h1 class="mb-8 text-4xl font-extrabold uppercase">Future Publishing</h1>
+                <p>Future publishing offered me the opportunity to contribute a four page tutorial to .netmag (Issue 185) giving details to developers on how they may design and build an interactive map programmed with ActionScript.</p>
+                <blockquote class="my-6 border-[#007E90]">
+                    <p>Show off all the places you've visited with an interactive Flash-enabled map. Designer Martin Dingley (www.soapslurp.co.uk) explains how to go about it</p>
+                    <cite>
+                        <b>.net</b>/technique/flash
+                    </cite>
+                </blockquote>
+                <p>The article attempts to cover subjects such as dynamically loading data through external XML files, listening and attaching events, iterating over data array objects.</p>
+                <p>I stopped developing applications and portfolios using ActionScript in 2014. Inevitably, Adobe blocked Flash content from running in Flash Player beginning January 12, 2021.</p>
+            </div>
+        </div>
+    </div>
+
+    </main>
+        <footer class="border-t ">
+
+            
+
+            <ul class="container mx-auto py-8 px-4 md:px-0 items-center gap-2 text-gray-400 text-sm flex relative">
+
+                <li>
+                    <a href="/" class="text-gray-200 hover:text-[#4db692]">
+
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class="w-6 inline"
+                            viewBox="0 0 401 401" fill="currentColor">
+                            <path
+                                d="m450 250.8-96.67 48.34-.2.1a26 26 0 0 1-34.87-11.64 3.59 3.59 0 0 0-.17-.34l-51.7-103.4c0-.08-.07-.14-.1-.21a25.69 25.69 0 0 1-2.74-11.65 26 26 0 0 1 49.24-11.61c.06.11.12.23.17.34l40.18 80.34 24.58-12.28 30.4-15.21 25.52-12.76.21-.1a22 22 0 0 1 2.38-1 25.89 25.89 0 0 1 9.23-1.68 27.09 27.09 0 0 1 4.54.4V75a25 25 0 0 0-20-24.5V50H75a25 25 0 0 0-25 25v175.4a26 26 0 1 1 0 51.17V420h.5A25 25 0 0 0 75 450h345v-.5a25 25 0 0 0 29.5-29.5h.5ZM262.43 302a26 26 0 0 1-23.25-14.37l-.17-.34-23.74-47.48-32 95.9-.17.5a26 26 0 0 1-49.31 0l-.17-.5-51.77-155.45a26 26 0 0 1 49.32-16.44l.16.5 27.16 81.45 27.15-81.45.16-.5a26 26 0 0 1 47.91-3.39l.17.34 51.7 103.4.11.21A26 26 0 0 1 262.43 302Z"
+                                transform="translate(-49.5 -49.5)" />
+                        </svg>
+
+                    </a>
+                </li>
+
+                <li>
+
+                        &copy; Mart Dingley 2022 &bull; Published using
+                        <a href="https://jigsaw.tighten.com/" class="underline hover:no-underline">Jigsaw</a> &amp;
+                        <a href="https://tailwindcss.com/" class="underline hover:no-underline">Tailwind CSS</a>
+
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+
+    
+</body>
+
+</html>
