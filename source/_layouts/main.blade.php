@@ -36,16 +36,6 @@
         <nav
             class="lg:flex items-center border-b border-swiss-coffee-600 justify-between bg-[#4db692] md:bg-swiss-coffee-500 ">
 
-            <script>
-                const navMenu = {
-                    toggle() {
-                        const menu = document.getElementById('mobile-menu');
-                        menu.classList.toggle('hidden');
-                        menu.classList.toggle('lg:block');
-                    },
-                }
-            </script>
-
             <ul
                 class="flex container gap-1 mx-auto items-center justify-between md:justify-start text-sm tracking-widest font-railway font-bold uppercase relative">
 
@@ -199,6 +189,18 @@
         </footer>
 
     </div>
+
+    <script data-host="https://microanalytics.io" data-dnt="false" src="https://microanalytics.io/js/script.js" id="ZwSg9rf6GA" async defer></script>
+
+    <script>
+        const navMenu = {
+            toggle() {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('lg:block');
+            },
+        }
+    </script>
 
     @stack('scripts')
 
