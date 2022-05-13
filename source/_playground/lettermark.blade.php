@@ -4,7 +4,8 @@ title: Domain Lettermark
 section: content
 image: assets/img/playground/lettermark/martdingley.jpg
 url:
-featured: 1
+featured: 05
+date: 2021-01-01
 ---
 
 @extends('_layouts.playground')

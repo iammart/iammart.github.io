@@ -2,7 +2,7 @@
 section: content
 title: El Duderino
 image: assets/img/playground/elduderino/thumb.jpg
-date: 2022-03-31
+featured: 10
 description: Inspiration from the cult classic 'The Big Lebowski' with Jeff Bridges and his bowling opponent 'Jesus Quintana'
 ---
 

@@ -3,7 +3,7 @@ extends: _layouts.playground
 section: playground
 image: assets/img/invitation.png
 title: Flyer - 70th Birthday Invitation
-featured: true
+featured: 07
 description: The invitation was another excuse to have some fun in Illustrator and organise a short run of 100 flyers for my partners dads 70th Birthday Party
 ---
 

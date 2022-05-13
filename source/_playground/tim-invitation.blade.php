@@ -3,7 +3,7 @@ extends: _layouts.playground
 section: content
 image: assets/img/playground/tim-invitation/thumb.jpg
 title: 60th Birthday Invitation
-featured: 1
+featured: 09
 ---
 
 @extends('_layouts.playground')

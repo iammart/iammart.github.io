@@ -2,7 +2,7 @@
 section: content
 title: Pickastar
 image: assets/img/pickastar.png
-featured: 1
+featured: 08
 ---
 
 @extends('_layouts.playground')
@@ -11,9 +11,6 @@ featured: 1
     <div class="md:h-screen/2 flex items-center justify-center bg-[#000112]">
         <img src="/assets/img/playground/pickastar/logo_3.png" alt="{{ $page->title }}" class="max-h-full object-contain">
     </div>
-
-
-
 
     <div class="p-8">
 

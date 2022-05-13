@@ -4,7 +4,7 @@ section: playground
 title: Christmas Tipple
 image: assets/img/xmas-tipple.png
 url: christmas-tipple
-featured: 1
+featured: 06
 ---
 
 @extends('_layouts.playground')
