@@ -1,6 +1,6 @@
 ---
 title: Playground
-description: A little bit about the site
+description: Print as medium is great, at the end of the process you generally have something you can touch and feel as result your hard work.
 ---
 @extends('_layouts.main')
 
