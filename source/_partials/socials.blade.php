@@ -40,8 +40,9 @@
         </svg>
     </a>
 
-    <a href="https://twitter.com/martdingley"
-        class="inline-block text-gray-800 hover:text-[#1DB954] transition-colors border p-2 border-transparent hover:border-gray-800 rounded" target="_blank"
+    <a href="https://open.spotify.com/user/dingk"
+        class="inline-block text-gray-800 hover:text-[#1DB954] transition-colors border p-2 border-transparent hover:border-gray-800 rounded"
+        target="_blank"
         title="Spotify">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24"
             fill="currentColor">
