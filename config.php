@@ -6,7 +6,7 @@ return [
     'production' => false,
     'baseUrl' => 'https://martdingley.test',
     'siteName' => 'Mart Dingley',
-    'siteDescription' => 'Offering close to 20 years experience building and designing in the web space, specialising in web applications utilising APIs using PHP, MySQL, HTML, CSS & JavaScript.',
+    'siteDescription' => 'Experienced web application developer utilising APIs using PHP, MySQL, HTML, CSS & JavaScript.',
     'collections' => [
         'playground' => [
             'path' => '{collection}/{filename}',
