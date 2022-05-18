@@ -30,7 +30,7 @@ description: The journey into bread making started at the Riverford Field Kitche
                             @foreach ($bakery as $bread)
                                 <div class="-ml-px -mt-px w-1/3 border border-transparent lg:w-1/6">
                                     <a href="/assets/img/bakery{{ url($page->bakeryImageFromFile($bread->thumb)) }}" target="_blank" title="{{ $bread->thumb }}" class="block overflow-hidden rounded">
-                                        <img src="/assets/img/bakery/thumbs/{{ url($bread->thumb) }}" alt="{{ $bread->thumb }}" class="transform w-full rounded transition duration-150 ease-in-out hover:scale-110">
+                                        <img src="{{ url("/assets/img/bakery/thumbs/{$bread->thumb}") }}" alt="{{ $bread->thumb }}" class="transform w-full rounded transition duration-150 ease-in-out hover:scale-110">
                                     </a>
                                 </div>
                             @endforeach
