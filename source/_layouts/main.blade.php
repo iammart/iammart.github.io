@@ -14,16 +14,22 @@
     <meta property="og:image " content="{{ $page->getImage() }}"/>
     <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@martdingley" />
+    <meta name="twitter:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}" />
+    <meta name="twitter:description" content="{{ $page->description ?? $page->siteDescription }}." />
+    <meta name="twitter:image" content="{{ $page->getImage() }}" />
+
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+    <link rel="stylesheet" href="{{ url(mix('css/main.css', 'assets/build')) }}">
 
-    <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+    <script defer src="{{ url(mix('js/main.js', 'assets/build')) }}"></script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url('site.webmanifest') }}">
 
     @stack('styles')
 
