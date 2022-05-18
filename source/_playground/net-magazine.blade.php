@@ -32,7 +32,7 @@ description: Four page tutorial for .netmag (Issue 185) giving details to develo
 
 @section('content')
     <div class="bg-white">
-        <div class="min-h-screen/2 container container mx-auto lg:flex justify-center">
+        <div class="min-h-screen/2 container mx-auto lg:flex justify-center">
             <div class="group z-0 lg:w-1/2 xl:w-35 bg-[#007E90]">
                 <img src="/assets/img/playground/netmag/magazine-fold.jpg" alt="Netmag" class="mx-auto h-full object-contain">
             </div>
@@ -47,6 +47,18 @@ description: Four page tutorial for .netmag (Issue 185) giving details to develo
                 </blockquote>
                 <p>The article attempts to cover subjects such as dynamically loading data through external XML files, listening and attaching events, iterating over data array objects.</p>
                 <p>I stopped developing applications and portfolios using ActionScript in 2014. Inevitably, Adobe blocked Flash content from running in Flash Player beginning January 12, 2021.</p>
+
+
+                <div class="mt-6">
+                    <a
+                        href="{{ url('/assets/pdf/NET185.tut-flash.pdf') }}"
+                        target="_blank"
+                        class="bg-black inline-flex text-white rounded overflow-hidden items-center  gap-2 pr-4 font-bold">
+                            <img src="{{ url('/assets/img/1_QLOJOWLgMLReWWEvVEm0iA.jpg') }}" alt="Download NET185" class="w-12 border-r border-white">
+                            <span>Download NET185</span>
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>
