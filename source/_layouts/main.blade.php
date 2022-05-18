@@ -41,7 +41,7 @@
 
                 <li class="mr-8 ml-4">
                     <a href="/"
-                        class=" text-white rounded-md relative block z-10
+                        class="text-white rounded-md relative block z-10
                         md:before:absolute md:before:-inset-x-4 md:before:-inset-y-4
                         md:before:z-[-10] md:before:block
                         md:before:w-30 md:before:h-28
@@ -97,21 +97,19 @@
                 <li class="md:hidden px-4">
 
                     <button type="button" onclick="navMenu.toggle()"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-downy-600 focus:bg-downy-600 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-white"
                         aria-controls="mobile-menu" aria-expanded="false">
 
                         <span class="sr-only">Open main menu</span>
 
                         <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
 
                         <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
 
                     </button>
@@ -156,12 +154,6 @@
 
         @yield('body')
         <footer class="border-t ">
-
-            {{-- <div class=" bg-gray-100 border-b">
-                <div class="container mx-auto py-8 px-4 md:px-0 text-gray-400 ">
-                    <p>Get in touch if we seem like a good fit</p>
-                </div>
-            </div> --}}
 
             <ul class="container mx-auto py-8 px-4 md:px-0 items-center gap-2 text-gray-400 text-sm flex relative">
 
