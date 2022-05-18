@@ -86,7 +86,7 @@
                             </a>
                         </li>
                         <li>
-                            <a title="{{ $page->siteName }} Contact" href="mailto:dingley@gmail.com"
+                            <a title="{{ $page->siteName }} Contact" href="mailto:contact@martdingley.co.uk"
                                 class="block text-gray-700 rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400">
                                 Contact
                             </a>
