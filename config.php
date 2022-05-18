@@ -4,7 +4,7 @@ use Illuminate\Support\Str;
 
 return [
     'production' => false,
-    'baseUrl' => '',
+    'baseUrl' => 'https://martdingley.test',
     'siteName' => 'Mart Dingley',
     'siteDescription' => 'Offering close to 20 years experience building and designing in the web space, specialising in web applications utilising APIs using PHP, MySQL, HTML, CSS & JavaScript.',
     'collections' => [
@@ -46,10 +46,10 @@ return [
         $destinationPath =  '/assets/img' . $page->getPath() . '/og-image.jpg';
 
         if(file_exists(public_path($destinationPath))){
-            return $destinationPath;
+            return url($destinationPath);
         }
 
-        return '/assets/img/og-image.jpg';
+        return url('/assets/img/og-image.jpg');
 
     },
 
