@@ -3,6 +3,7 @@ extends: _layouts.playground
 section: content
 image: assets/img/playground/tim-invitation/thumb.jpg
 title: 60th Birthday Invitation
+description: A personal invitation for a family members 60th Birthday party.
 featured: 09
 ---
 
