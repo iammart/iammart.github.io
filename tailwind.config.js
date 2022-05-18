@@ -26,7 +26,17 @@ module.exports = {
       },
       colors: {
         'downy': {
-          DEFAULT: '#5CCDCF',
+          DEFAULT: '#4DB692',
+          50: '#CFEBE2',
+          100: '#C1E5D9',
+          200: '#A4DAC7',
+          300: '#87CEB5',
+          400: '#6AC2A4',
+          500: '#4DB692',
+          600: '#3B9073',
+          700: '#2B6853',
+          800: '#1A4033',
+          900: '#0A1914'
         },
         'swiss-coffee': {
           DEFAULT: '#E1D7D5',
