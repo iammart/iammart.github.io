@@ -2,5 +2,5 @@
 
 return [
     'production' => true,
-    'baseUrl' => 'https://www.martdingley.co.uk'
+    'baseUrl' => 'https://martdingley.co.uk'
 ];

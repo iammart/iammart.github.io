@@ -4,7 +4,7 @@ use Illuminate\Support\Str;
 
 return [
     'production' => false,
-    'baseUrl' => 'https://martdingley.test',
+    'baseUrl' => '/',
     'siteName' => 'Mart Dingley',
     'siteDescription' => 'Experienced web application developer utilising APIs using PHP, MySQL, HTML, CSS & JavaScript.',
     'collections' => [
