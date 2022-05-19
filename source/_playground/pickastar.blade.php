@@ -16,36 +16,31 @@ featured: 08
 
         <section class="contact-content container mx-auto">
 
-            <div class="flex gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2">
 
                 <div class="bg-black text-center">
-                    <img src="/assets/img/playground/pickastar/logo_1.png" alt="{{ $page->title }}">
+                    <img src="/assets/img/playground/pickastar/logo_1.png" alt="{{ $page->title }}" class="mx-auto w-full">
                 </div>
 
                 <div class="bg-white text-center">
-                    <img src="/assets/img/playground/pickastar/logo_2.png" alt="{{ $page->title }}">
+                    <img src="/assets/img/playground/pickastar/logo_2.png" alt="{{ $page->title }}" class="mx-auto w-full">
                 </div>
 
                 <div class="bg-black text-center">
-                    <img src="/assets/img/playground/pickastar/logo_3.png" alt="{{ $page->title }}" class="mx-auto">
+                    <img src="/assets/img/playground/pickastar/logo_3.png" alt="{{ $page->title }}" class="mx-auto w-full">
                 </div>
 
-
                 <div class="bg-[#21b1d6] text-center">
-                    <img src="/assets/img/playground/pickastar/logo_4.png" alt="{{ $page->title }}" class="mx-auto">
+                    <img src="/assets/img/playground/pickastar/logo_4.png" alt="{{ $page->title }}" class="mx-auto w-full">
                 </div>
 
                 <div class="bg-[#f654a2] text-center">
-                    <img src="/assets/img/playground/pickastar/logo_5.png" alt="{{ $page->title }}" class="mx-auto">
+                    <img src="/assets/img/playground/pickastar/logo_5.png" alt="{{ $page->title }}" class="mx-auto w-full">
                 </div>
 
             </div>
 
         </section>
-
-
-
-
 
     </div>
 
@@ -57,7 +52,6 @@ featured: 08
 
                     <p>I was contracted to develop an identify for a new startup which was to provide a platform for mobile masseuses to easily connect and facilitate appointments.</p>
                     <p>The initial design brief was described as wanting a GTA Vice City vibe, there were further developments moving away from this theme explored below.</p>
-                    {{-- <p>The solution will consist of two main elements, firstly a web administration area which will enable the business to approve masseuses and manage their online profile. Secondly, the solution will provide a mobile platform for anyone seeking a massage to easily connect to masseuses in their immediate area.</p> --}}
 
                 </div>
             </div>

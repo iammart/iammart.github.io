@@ -17,7 +17,7 @@ type: profile
 
                     <div class="w-full md:w-1/2">
 
-                        <img src="/assets/img/IMG_5425.jpg" alt="Mart Dingley" class="md:border-r-1 md:border-l-1 mb-6 w-full lg:rounded ">
+                        <img src="/assets/img/IMG_5425.jpg" alt="Missy & Finn" class="md:border-r-1 md:border-l-1 mb-6 w-full lg:rounded ">
 
                     </div>
 
@@ -29,9 +29,9 @@ type: profile
 
                         <p>Ive been an adopter of Laravel since 5.0 having migrated across from Slim PHP 2.* which we used primarily for lightweight APIs.</p>
 
-                        <p>Its also been fortunate for me to have had experience directly in control of designing for retail shop windows, retail photography, stationary, branding, logos, brochures, websites, games -  My experiences haven't just been limited to just digital.</p>
+                        <p>It's also been fortunate for me to have had experience directly in control of designing for retail shop windows, retail photography, stationary, branding, logos, brochures, websites, games -  My experiences haven't just been limited to just digital.</p>
 
-                        <p>Prior to this I got my foot through the door working a few years for a digital agency in London, partners to the best restaurants in the UK, international hotels &amp; prestigious members clubs, creating online presense.</p>
+                        <p>Prior to this I got my foot through the door working a few years for a digital agency in London, partners to the best restaurants in the UK, international hotels &amp; prestigious members clubs, creating online presences.</p>
 
                         <hr class="full-width border-mojo my-6">
 
