@@ -1,8 +1,9 @@
 ---
 section: content
-image: assets/img/1_QLOJOWLgMLReWWEvVEm0iA.jpg
+image: assets/img/playground/net-magazine/1_QLOJOWLgMLReWWEvVEm0iA.jpg
 title: Future Publishing
 description: Four page tutorial for .netmag (Issue 185) giving details to developers on how they may design and build an interactive map programmed with ActionScript
+
 ---
 
 @extends('_layouts.playground')
@@ -34,7 +35,7 @@ description: Four page tutorial for .netmag (Issue 185) giving details to develo
     <div class="bg-white">
         <div class="min-h-screen/2 container mx-auto lg:flex justify-center">
             <div class="group z-0 lg:w-1/2 xl:w-35 bg-[#007E90]">
-                <img src="/assets/img/playground/netmag/magazine-fold.jpg" alt="Netmag" class="mx-auto h-full object-contain">
+                <img src="/assets/img/playground/net-magazine/magazine-fold.jpg" alt="{{ $page->title }}" class="mx-auto h-full object-contain">
             </div>
             <div class="lg:w-1/2 xl:w-2/5 p-8 lg:p-16">
                 <h1 class="mb-8 text-4xl font-extrabold uppercase">{{ $page->title }}</h1>
