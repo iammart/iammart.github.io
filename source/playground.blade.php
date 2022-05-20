@@ -23,14 +23,13 @@ description: Print as medium is great, at the end of the process you generally h
 
 @section('body')
     <div class="bg-gray-900 text-gray-100">
-        <div class="container mx-auto">
+        <div class="md:container mx-auto">
 
             <div class="gap-8">
 
                 <div class="items-start align-bottom lg:flex">
 
-
-                    <div class="p-6 lg:w-1/2 lg:p-0 lg:pt-16">
+                    <div class="p-6 lg:w-1/2 md:pt-16">
 
                         <div class="w-3/4">
 
@@ -41,9 +40,9 @@ description: Print as medium is great, at the end of the process you generally h
                         <div class="-mx-2 flex flex-wrap lg:pb-16 pl-0 before:rounded-br lg:pr-16">
 
                             @foreach ($playground->take(6) as $work)
-                                <div class="w-full p-2 lg:w-1/3">
+                                <div class="w-full p-2 sm:w-1/2 lg:w-1/3">
                                     <a href="{{ $work->getUrl() }}" title="{{ $work->name }}" class="block overflow-hidden rounded">
-                                        <img src="{{ url($work->image) }}" alt="{{ $work->name }}" class="transform rounded transition duration-150 ease-in-out hover:scale-110">
+                                        <img src="{{ url($work->image) }}" alt="{{ $work->name }}" class="transform rounded transition duration-150 ease-in-out hover:scale-110 w-full">
                                     </a>
                                 </div>
                             @endforeach
