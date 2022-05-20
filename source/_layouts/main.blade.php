@@ -11,7 +11,7 @@
     <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
     <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
     <meta property="og:url" content="{{ $page->getUrl() ?? url() }}"/>
-    <meta property="og:image " content="{{ $page->getImage() }}"/>
+    <meta property="og:image" content="{{ $page->getImage() }}"/>
     <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -40,7 +40,7 @@
     <div class="flex flex-col min-h-screen">
 
         <nav
-            class="lg:flex items-center border-b border-swiss-coffee-600 justify-between bg-[#4db692] md:bg-swiss-coffee-500 ">
+            class="lg:flex items-center border-b border-swiss-coffee-600 justify-between bg-[#4db692] md:bg-swiss-coffee-500">
 
             <ul
                 class="flex container gap-1 mx-auto items-center justify-between md:justify-start text-sm tracking-widest font-railway font-bold uppercase relative">
@@ -66,7 +66,7 @@
 
                 <li class="hidden md:block" id="js-nav-menu">
                     <ul
-                        class="container flex gap-1 mx-auto items-center text-sm tracking-widest font-railway font-bold uppercase ">
+                        class="container flex gap-1 mx-auto items-center text-sm tracking-widest font-railway font-bold uppercase">
                         <li>
                             <a title="{{ $page->siteName }} About" href="/about"
                                 class="block rounded py-2 px-3 hover:text-mojo hover:bg-swiss-coffee-400 {{ $page->isActive('/about') ? 'active text-white bg-[#4db692]' : 'text-gray-700' }}">
@@ -159,7 +159,7 @@
         </nav>
 
         @yield('body')
-        <footer class="border-t ">
+        <footer class="border-t">
 
             <ul class="container mx-auto py-8 px-4 md:px-0 items-center gap-2 text-gray-400 text-sm flex relative">
 
