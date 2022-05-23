@@ -53,4 +53,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build_production
           cname: martdingley.co.uk
-          commit_message: ${{ github.event.head_commit.message }}
+          commit_message: Build project for github pages
